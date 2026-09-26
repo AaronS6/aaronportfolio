@@ -193,8 +193,7 @@ export function Awards() {
 
               {/* Image stage — fills screen on mobile, fixed height on desktop */}
               <div
-                className="relative flex flex-1 items-center justify-center overflow-hidden bg-black"
-                style={{ minHeight: "50vh" }}
+                className="relative flex h-[55vh] items-center justify-center overflow-hidden bg-black sm:h-[60vh]"
                 onClick={(e) => e.stopPropagation()}
                 onTouchStart={onTouchStart}
                 onTouchEnd={onTouchEnd}
@@ -206,14 +205,13 @@ export function Awards() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -30 }}
                     transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                    className="relative h-full w-full"
+                    className="absolute inset-0 flex items-center justify-center p-3 sm:p-4"
                   >
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={awards[activeAward].gallery[photoIndex]}
                       alt={`${awards[activeAward].title} — photo ${photoIndex + 1}`}
-                      fill
-                      sizes="100vw"
-                      className="object-contain p-2 sm:p-4"
+                      className="max-h-full max-w-full object-contain"
                     />
                   </motion.div>
                 </AnimatePresence>
@@ -254,7 +252,8 @@ export function Awards() {
                         idx === photoIndex ? "ring-white" : "ring-transparent opacity-40 hover:opacity-70"
                       }`}
                     >
-                      <Image src={img} alt="" fill sizes="48px" className="object-cover" />
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={img} alt="" className="h-full w-full object-cover" />
                     </button>
                   ))}
                 </div>

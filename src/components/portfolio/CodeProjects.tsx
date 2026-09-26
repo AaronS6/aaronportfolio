@@ -152,27 +152,34 @@ export function CodeProjects() {
                     <span className="text-xs uppercase tracking-[0.2em] text-ink-faint">
                       Status
                     </span>
-                    <Magnetic as="a" href={p.liveUrl} strength={8}>
-                      <a
-                        href={p.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={cn(
-                          "group flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-ink transition-colors"
-                        )}
-                        style={{ background: accent.soft }}
-                      >
-                        <span
-                          className="h-1.5 w-1.5 rounded-full animate-pulse-soft"
-                          style={{ background: accent.bg }}
-                        />
-                        Open live
-                        <ExternalLink
-                          size={14}
-                          className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                        />
-                      </a>
-                    </Magnetic>
+                    {p.id === "clubhub" ? (
+                      <span className="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-ink-faint" style={{ background: "rgba(23,23,23,0.06)" }}>
+                        <span className="h-1.5 w-1.5 rounded-full bg-red-500/60" />
+                        Currently down
+                      </span>
+                    ) : (
+                      <Magnetic as="a" href={p.liveUrl} strength={8}>
+                        <a
+                          href={p.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            "group flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-ink transition-colors"
+                          )}
+                          style={{ background: accent.soft }}
+                        >
+                          <span
+                            className="h-1.5 w-1.5 rounded-full animate-pulse-soft"
+                            style={{ background: accent.bg }}
+                          />
+                          Open live
+                          <ExternalLink
+                            size={14}
+                            className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          />
+                        </a>
+                      </Magnetic>
+                    )}
                   </div>
                 </div>
               </motion.div>

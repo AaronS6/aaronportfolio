@@ -41,7 +41,7 @@ export const chapters = [
   { id: "contact", label: "Contact", key: "t" },
 ] as const;
 
-/* Intro carousel — mix of photo cards + gradient quote cards */
+/* Intro carousel — all photos, no quote cards */
 export const introCards = [
   {
     type: "photo" as const,
@@ -51,11 +51,6 @@ export const introCards = [
     gradient: "from-sky/40 to-grape/30",
   },
   {
-    type: "quote" as const,
-    text: "I like small things done really well.",
-    accent: "lime" as const,
-  },
-  {
     type: "photo" as const,
     src: "/images/real/intro-council.jpg",
     alt: "Student council group photo",
@@ -63,21 +58,11 @@ export const introCards = [
     gradient: "from-lime/40 to-sun/30",
   },
   {
-    type: "quote" as const,
-    text: "Code is just design you can run.",
-    accent: "grape" as const,
-  },
-  {
     type: "photo" as const,
     src: "/images/real/intro-piano.jpg",
     alt: "Playing piano with a younger child",
     caption: "Mentoring younger kids",
     gradient: "from-peach/40 to-coral/30",
-  },
-  {
-    type: "quote" as const,
-    text: "Build with people, not at them.",
-    accent: "coral" as const,
   },
   {
     type: "photo" as const,
@@ -92,6 +77,27 @@ export const introCards = [
     alt: "Aaron speaking at an FDT debate event",
     caption: "FDT debate tournament",
     gradient: "from-grape/40 to-sky/30",
+  },
+  {
+    type: "photo" as const,
+    src: "/images/real/intro-classroom1.jpg",
+    alt: "In the classroom teaching",
+    caption: "Teaching",
+    gradient: "from-lime/40 to-sky/30",
+  },
+  {
+    type: "photo" as const,
+    src: "/images/real/intro-classroom2.jpg",
+    alt: "Classroom activity",
+    caption: "Classroom",
+    gradient: "from-peach/40 to-coral/30",
+  },
+  {
+    type: "photo" as const,
+    src: "/images/real/intro-interview.jpg",
+    alt: "Aaron interviewing someone outdoors",
+    caption: "Out and about",
+    gradient: "from-grape/40 to-sun/30",
   },
 ];
 
@@ -218,7 +224,7 @@ export const codeProjects = [
       "Focus timer (Pomodoro) + AI study assistant",
       "PWA with push notifications and document scanning",
     ],
-    liveUrl: "https://studyos-zlnj.onrender.com/",
+    liveUrl: "https://studyos-ytbn.onrender.com/",
     accent: "lime" as const,
   },
   {
@@ -309,11 +315,11 @@ export const timeline = [
   },
   {
     id: "t3",
-    period: "2026",
+    period: "2026 — Present",
     role: "Vice President",
-    org: "Nature Exploration Geographic Club",
+    org: "Burnaby North Business Club",
     description:
-      "Lead the club's environmental projects — species awareness, local watershed research, and policy briefs we share with the school.",
+      "Helped rebuild the club after a quiet year. I run the case-comp prep sessions, keep the deck template alive, and make sure newer members actually get to present.",
     accent: "peach" as const,
   },
   {

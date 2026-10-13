@@ -12,16 +12,14 @@ import { cn } from "@/lib/utils";
 export function IntroCarousel() {
   const reduced = fmReducedMotion();
 
-  // Desktop bento layout — 8 photos
+  // Desktop bento layout — 6 photos
   const desktopLayout = [
     "hidden sm:block sm:col-span-2 sm:row-span-2",      // 0: kayak — big
     "hidden sm:block sm:col-span-1 sm:row-span-1",       // 1: council
     "hidden sm:block sm:col-span-1 sm:row-span-2",       // 2: piano — tall
     "hidden sm:block sm:col-span-2 sm:row-span-1",       // 3: nature — wide
     "hidden sm:block sm:col-span-1 sm:row-span-1",       // 4: debate
-    "hidden sm:block sm:col-span-1 sm:row-span-1",       // 5: classroom1
-    "hidden sm:block sm:col-span-1 sm:row-span-2",       // 6: classroom2 — tall
-    "hidden sm:block sm:col-span-3 sm:row-span-1",       // 7: interview — wide
+    "hidden sm:block sm:col-span-3 sm:row-span-1",       // 5: interview — wide
   ];
 
   return (

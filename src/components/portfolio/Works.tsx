@@ -29,7 +29,7 @@ export function Works() {
               Featured work
             </span>
             <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl">
-              Five things I made{" "}
+              Four things I made{" "}
               <span className="font-serif-italic text-ink-soft">
                 that I&apos;m proud of.
               </span>

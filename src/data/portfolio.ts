@@ -80,20 +80,6 @@ export const introCards = [
   },
   {
     type: "photo" as const,
-    src: "/images/real/intro-classroom1.jpg",
-    alt: "In the classroom teaching",
-    caption: "Teaching",
-    gradient: "from-lime/40 to-sky/30",
-  },
-  {
-    type: "photo" as const,
-    src: "/images/real/intro-classroom2.jpg",
-    alt: "Classroom activity",
-    caption: "Classroom",
-    gradient: "from-peach/40 to-coral/30",
-  },
-  {
-    type: "photo" as const,
     src: "/images/real/intro-interview.jpg",
     alt: "Aaron interviewing someone outdoors",
     caption: "Out and about",
@@ -101,7 +87,7 @@ export const introCards = [
   },
 ];
 
-/* Featured works — 5 projects, expandable */
+/* Featured works — 4 projects, expandable */
 export const projects = [
   {
     id: "works-1",
@@ -179,52 +165,24 @@ export const projects = [
     ],
     takeaway: "Seven roles. One mission: build things that last.",
   },
-  {
-    id: "works-5",
-    title: "Westridge Elementary Volunteering",
-    blurb:
-      "A week in June volunteering across five classrooms at Westridge Elementary. Hung out with the kids, joined in on activities, and tried to figure out what makes a teacher actually good.",
-    year: "June 2025",
-    role: "Volunteer",
-    tags: ["Volunteering", "Education", "Community"],
-    accent: "coral" as const,
-    cover: "/images/real/work-westridge.jpg",
-    gallery: [
-      { src: "/images/real/westridge-1.jpg", caption: "Popsicle break with everyone." },
-      { src: "/images/real/westridge-2.jpg", caption: "With the kids under the trees." },
-      { src: "/images/real/westridge-3.jpg", caption: "Silly faces." },
-      { src: "/images/real/westridge-4.jpg", caption: "On the bench with these two." },
-      { src: "/images/real/westridge-5.jpg", caption: "Heart hands." },
-      { src: "/images/real/westridge-6.jpg", caption: "Kite-flying at recess." },
-      { src: "/images/real/westridge-7.jpg", caption: "Movie time in the classroom." },
-      { src: "/images/real/westridge-8.jpg", caption: "Their drawings were so good." },
-      { src: "/images/real/westridge-9.jpg", caption: "Art class." },
-    ],
-    details: [
-      "Five classrooms over five days.",
-      "Joined activities, helped teachers, and hung out with the kids.",
-      "Kind of felt like being back in elementary school myself.",
-    ],
-    takeaway: "Photos from the week.",
-  },
 ];
 
-/* Code projects — StudyOS + ClubHub, code-editor card style */
+/* Code projects — Beam + ClubHub, code-editor card style */
 export const codeProjects = [
   {
-    id: "studyos",
-    name: "StudyOS",
-    tagline: "Your Academic Life Operating System",
+    id: "beam",
+    name: "Beam",
+    tagline: "File Transfer, Without the Cables",
     description:
-      "A full academic planner for students — timetable, calendar, homework, exams, grades, focus timer, notes, and an AI study assistant. Syncs Google Calendar and school iCal feeds, supports push notifications, and installs as a PWA.",
-    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Google AI", "Tailwind"],
+      "A modern cross-device file transfer platform that lets you send files directly between devices. Uses WebRTC for peer-to-peer communication, QR-code pairing for quick connections, and an encrypted relay fallback for transfers when direct connections aren't possible.",
+    stack: ["Next.js 16", "React 19", "TypeScript", "WebRTC", "Socket.IO", "Tailwind CSS", "shadcn/ui", "AES-GCM"],
     features: [
-      "Timetable with Day 1/Day 2 rotation + Google Calendar sync",
-      "Tasks, exams, grades, and class management",
-      "Focus timer (Pomodoro) + AI study assistant",
-      "PWA with push notifications and document scanning",
+      "Direct device-to-device file transfers using WebRTC",
+      "QR-code pairing for quick, seamless device connections",
+      "Chunked file transfers with parallel data channels and backpressure handling",
+      "AES-GCM-encrypted relay fallback when peer-to-peer connections fail",
     ],
-    liveUrl: "https://studyos-ytbn.onrender.com/",
+    liveUrl: "https://mybeam.vercel.app/",
     accent: "lime" as const,
   },
   {
@@ -467,8 +425,8 @@ export const faq = [
   },
   {
     id: "f5",
-    q: "Can I use StudyOS or ClubHub?",
-    a: "Yeah — both are live. StudyOS is an academic planner; ClubHub is a hub for school clubs. Links are in the Code section.",
+    q: "Can I use Beam or ClubHub?",
+    a: "Yeah — both are live. Beam is a file transfer tool; ClubHub is a hub for school clubs. Links are in the Code section.",
   },
   {
     id: "f6",

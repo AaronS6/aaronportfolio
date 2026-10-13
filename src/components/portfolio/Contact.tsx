@@ -1,7 +1,7 @@
 "use client";
 
 import { useReducedMotion as fmReducedMotion } from "framer-motion";
-import { Mail, Instagram, ArrowUpRight, ArrowUp } from "lucide-react";
+import { Mail, ArrowUpRight, ArrowUp } from "lucide-react";
 import { profile, chapters } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 import { Magnetic } from "./Magnetic";
@@ -70,22 +70,6 @@ export function Contact() {
                     />
                   </a>
                 </Magnetic>
-
-                <Magnetic as="a" href={profile.instagram.url} strength={10}>
-                  <a
-                    href={profile.instagram.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-3 rounded-full px-5 py-3 text-sm font-medium text-ink-soft transition-colors hover:text-ink sm:px-6 sm:py-4"
-                  >
-                    <Instagram size={18} />
-                    {profile.instagram.handle}
-                    <ArrowUpRight
-                      size={16}
-                      className="opacity-60 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    />
-                  </a>
-                </Magnetic>
               </div>
             </div>
           </div>
@@ -128,14 +112,6 @@ export function Contact() {
                 className="flex items-center gap-2 text-sm text-ink-soft transition-colors hover:text-ink"
               >
                 <Mail size={14} /> Email
-              </a>
-              <a
-                href={profile.instagram.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-ink-soft transition-colors hover:text-ink"
-              >
-                <Instagram size={14} /> Instagram
               </a>
             </div>
           </div>
